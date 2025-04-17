@@ -1,25 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { User, Settings, Bell, Lock, Phone, Mail, LogOut } from "lucide-react";
+import { User, Lock, Phone, Settings } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthContext";
 import { Separator } from "@/components/ui/separator";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 type ProfileData = {
   name: string;
-  email: String;
-  phone: String;
-  role: String;
-  avatar: String;
+  email: string;
+  phone: string;
+  role: string;
+  avatar: string;
 };
 
 const ProfilePages = () => {
@@ -30,8 +23,6 @@ const ProfilePages = () => {
     role: "Scene Police",
     avatar: "/images/loginbg.png",
   });
-
-  const [activeTab, setActiveTab] = useState("profile");
 
   const [password, setPassword] = useState({
     current: "",
@@ -151,7 +142,7 @@ const ProfilePages = () => {
                   <CardHeader>
                     <CardTitle>
                       <h3 className="text-lg font-medium flex items-center">
-                        <Lock size={18} className="mr-2" />
+                        <Settings size={18} className="mr-2" />
                         Settings
                       </h3>
                     </CardTitle>
