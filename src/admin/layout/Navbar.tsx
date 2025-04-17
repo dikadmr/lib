@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { SidebarTrigger } from "../../components/ui/sidebar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const Navbar = () => {
   return (

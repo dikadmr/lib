@@ -11,6 +11,7 @@ export const login = async (
   try {
     console.log(username, password);
     console.log("API URL:", API_LOGIN);
+    localStorage.setItem("lib_username", username);
     const response = await axios.post(API_LOGIN, { username, password });
     console.log(response);
     callback(true, response.data);
