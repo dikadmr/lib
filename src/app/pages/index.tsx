@@ -1,9 +1,18 @@
 import Hero from "./Hero";
+import ProdukBuku from "./ProdukBuku";
+import TerlarisBuku from "./TerlarisBuku";
+import { Separator } from "@/components/ui/separator";
 
 const Pages = () => {
   return (
-    <div className="my-10 min-h-screen">
-      <Hero />
+    <div className="container mx-auto min-h-screen">
+      <main className="pt-16">
+        <Hero />
+        <Separator />
+        <ProdukBuku />
+        <Separator />
+        <TerlarisBuku />
+      </main>
     </div>
   );
 };

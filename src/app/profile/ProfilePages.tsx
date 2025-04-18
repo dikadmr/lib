@@ -102,7 +102,7 @@ const ProfilePages = () => {
                     </CardTitle>
                   </CardHeader>
                   <Separator />
-                  <CardContent className="py-6">
+                  <CardContent>
                     <div className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
@@ -148,7 +148,7 @@ const ProfilePages = () => {
                     </CardTitle>
                   </CardHeader>
                   <Separator />
-                  <CardContent className="py-6">
+                  <CardContent>
                     <div>
                       <h3 className="text-lg font-medium mb-4 flex items-center">
                         <Lock size={18} className="mr-2" />
