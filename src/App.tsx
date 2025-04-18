@@ -6,7 +6,6 @@ import Login from "./app/login/Login";
 import Register from "./app/register/Register";
 import Pages from "./app/pages";
 import Profile from "./app/profile";
-import { ThemeProvider } from "@/components/theme-provider";
 
 function App() {
   return (
