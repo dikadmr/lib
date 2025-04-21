@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
 import { User, Lock, Phone, Settings } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -33,7 +32,6 @@ const ProfilePages = () => {
   const [phone, setPhone] = useState(profileData.phone);
   const [email, setEmail] = useState(profileData.email);
 
-  const navigate = useNavigate();
   const username = localStorage.getItem("lib_username");
 
   const { setLoggedIn } = useAuth();
@@ -59,7 +57,7 @@ const ProfilePages = () => {
     localStorage.removeItem("TokenLogin");
     localStorage.removeItem("lib_username");
     setLoggedIn(false);
-    navigate("/");
+    window.location.href = "/";
   };
 
   return (

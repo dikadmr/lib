@@ -48,8 +48,7 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.removeItem("TokenLogin");
     setLoggedIn(false);
-    navigate("/");
-    console.log("logout");
+    window.location.href = "/";
   };
 
   return (
