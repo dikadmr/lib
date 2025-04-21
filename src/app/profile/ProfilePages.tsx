@@ -215,7 +215,7 @@ const ProfilePages = () => {
 
                           <Button
                             type="submit"
-                            className="bg-hijau-tua cursor-pointer"
+                            className="bg-emerald-800 cursor-pointer"
                           >
                             Update Password
                           </Button>
@@ -258,7 +258,7 @@ const ProfilePages = () => {
 
                           <Button
                             type="submit"
-                            className="bg-hijau-tua cursor-pointer hover:bg-red-500"
+                            className="bg-emerald-800 cursor-pointer hover:bg-red-500"
                           >
                             Update Contact Info
                           </Button>

@@ -42,7 +42,7 @@ export function LoginForm({ className, onSubmit }: LoginFormProps) {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full bg-hijau-tua">
+              <Button type="submit" className="w-full bg-emerald-800">
                 Login
               </Button>
               <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
@@ -88,7 +88,7 @@ export function LoginForm({ className, onSubmit }: LoginFormProps) {
             </div>
           </form>
           <div className="bg-muted relative hidden md:block">
-            <div className="absolute inset-0 h-full w-full bg-hijau-tua dark:brightness-[0.2] dark:grayscale" />
+            <div className="absolute inset-0 h-full w-full bg-emerald-800 dark:brightness-[0.2] dark:grayscale" />
 
             <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
               <div className="bg-black/50 p-6 rounded-xl max-w-2xl">

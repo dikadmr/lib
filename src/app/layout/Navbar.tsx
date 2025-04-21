@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50  w-full bg-putih shadow-md">
+    <nav className="fixed top-0 z-50 w-full bg-gray-100 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link
           to="/"
@@ -106,7 +106,7 @@ const Navbar = () => {
               onChange={(e) => setSearching(e.target.value)}
               className="w-48 sm:w-64 md:w-80 lg:w-96 px-3 py-1 text-sm"
             />
-            <Button onClick={handleSearch} className="px-3 bg-hijau-tua">
+            <Button onClick={handleSearch} className="px-3 bg-emerald-800">
               <Search className="w-5 h-5" />
             </Button>
           </div>
@@ -160,7 +160,7 @@ const Navbar = () => {
                   <LogIn className="mr-1" /> Login
                 </Link>
               </Button>
-              <Button asChild className="bg-hijau-tua">
+              <Button asChild className="bg-emerald-800">
                 <Link to="/register">
                   <UserPlus className="mr-1" /> Register
                 </Link>
@@ -269,7 +269,7 @@ const Navbar = () => {
               onChange={(e) => setSearching(e.target.value)}
               className="flex-1 text-sm"
             />
-            <Button onClick={handleSearch} className="bg-hijau-tua px-3">
+            <Button onClick={handleSearch} className="bg-emerald-800 px-3">
               <Search className="w-5 h-5" />
             </Button>
           </div>
