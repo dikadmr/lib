@@ -12,7 +12,6 @@ const Login = () => {
 
     login(username, password, (success, token) => {
       if (success) {
-        console.log(token);
         localStorage.setItem("TokenLogin", token);
         navigate("/");
       } else {

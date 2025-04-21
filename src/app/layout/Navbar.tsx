@@ -46,6 +46,7 @@ const Navbar = () => {
   }, []);
 
   const handleLogout = () => {
+    localStorage.removeItem("lib_username");
     localStorage.removeItem("TokenLogin");
     setLoggedIn(false);
     window.location.href = "/";
